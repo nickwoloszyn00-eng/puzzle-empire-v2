@@ -1,4 +1,4 @@
-const CACHE_NAME = 'puzzle-empire-v2-android-3';
+const CACHE_NAME = 'puzzle-empire-v2-android-4';
 const APP_FILES = ['./','./index.html','./styles.css','./levels.js','./game.js','./auth-config.js','./manifest.webmanifest','./assets/icon.svg'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(Promise.all([
